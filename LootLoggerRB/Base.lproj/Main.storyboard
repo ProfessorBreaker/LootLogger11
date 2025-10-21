@@ -89,7 +89,7 @@
                                     <outlet property="nameLabel" destination="Dlg-EM-TaS" id="INh-qb-QeK"/>
                                     <outlet property="serialNumberLabel" destination="O9X-Vd-2JR" id="GdQ-RG-1KI"/>
                                     <outlet property="valueLabel" destination="i6l-Yg-2b4" id="G1y-Fr-Axc"/>
-                                    <segue destination="mDL-gu-Sp7" kind="show" id="MQ3-4E-F0k"/>
+                                    <segue destination="mDL-gu-Sp7" kind="show" identifier="showItem" id="MQ3-4E-F0k"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="-287" y="-124"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="1EW-3a-Qhy">
             <objects>
-                <viewController id="mDL-gu-Sp7" sceneMemberID="viewController">
+                <viewController id="mDL-gu-Sp7" customClass="DetailViewController" customModule="LootLoggerRB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9fb-ug-oCc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,6 +185,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nfK-v7-op0"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="uzD-YE-Ksg" id="SfP-Xo-cx7"/>
+                        <outlet property="nameField" destination="4Zs-Ge-Fjn" id="wOB-uj-Y8Y"/>
+                        <outlet property="serialNumberField" destination="aYI-FV-A3p" id="yke-PZ-NDD"/>
+                        <outlet property="valueField" destination="u8l-3b-xj2" id="g95-2S-aNo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEq-TK-KuH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -193,7 +199,7 @@
     </scenes>
     <resources>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
